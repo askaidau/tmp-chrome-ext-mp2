@@ -1,0 +1,36 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "assets/icons/icon16.png",
+         "32": "assets/icons/icon32.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "MP2"
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "js": [ "content-scripts/jquery-3.7.1.min.js", "content-scripts/jquery.timers.min.js", "content-scripts/evalCore.umd.js", "content-scripts/content.js" ],
+      "matches": [ "*://*.macromicro.me/*" ]
+   } ],
+   "description": "A tool to surf charts for internal use.",
+   "host_permissions": [ "*://*.macromicro.me/*" ],
+   "icons": {
+      "128": "assets/icons/icon128.png",
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "64": "assets/icons/icon64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgXfdzxiuP3UwcWTs0LAqzOw/JVq4DCu+bPG3Mv/qtGCyVhSaB3chY1anzQtRTHlt8W9ndLniujcNaYm/OU8VBDPEKtknRkvwABYSq6u3TCTTrZniFeDa2CAoanBseaY8vs9yMNOutLw+Hqh4gnagTEqb1gKwSUCLtI9PlkxT65ZsZCJ35IlsobnsVUDoLD9M7DjhILQyqDt82zH0iuvhneFpxfPRSdemoY0oM94EoCFHKi7CGFZ9FXqjHY++y+UwdgekeKTshskcEvCashoqHOoocL76TAul52bb3IZoBIEBRbbnUN4DRLgPV4qGOJXuQ96Tbuj//0Z6r0lKLXVQ6QIDAQAB",
+   "manifest_version": 3,
+   "name": "MP2",
+   "permissions": [ "declarativeNetRequest", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.14",
+   "web_accessible_resources": [ {
+      "matches": [ "*://*.macromicro.me/*" ],
+      "resources": [ "content-scripts/evalCore.umd.js", "content-scripts/injected.js" ]
+   } ]
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="./content-scripts/jquery-3.7.1.min.js"></script>
+    <script src="./content-scripts/jquery.timers.min.js"></script>
+    <script defer src="popup.js" type="module"></script>
+</head>
+<body style="width: 250px;">
+<div id="orderInfo" style="width: 100%; margin-top: 1px; float: left;">
+    <div id="email" style="width: 100%; margin-top: 1px; float: left;">
+        <input id="mailbox" placeholder="mailbox..." type="text"/>
+        <input id="regMail" type="button" />
+    </div>
+    <div id="order" style="width: 100%;"></div>
+    <div id="bdCnt" style="width: 100%;"></div>
+    <div id="expiryDate" style="width: 100%;"></div>
+    <div id="dlCnt" style="width: 100%;"></div>
+</div>
+<div id="getBC" style="width: 100%; margin-top: 1px; float: left;">
+    <input id="code" placeholder="Binding Code ..." type="text"/>
+    <div style="width: 100%;">You can ask 'Jack Ma' for a binding code.</div>
+</div>
+<div style="width: 100%; margin-top: 5px; margin-bottom: 5px; float: left;">
+    <input id="syncBtn" type="button" />
+</div>
+<div id="cdl" style="padding-top: 10px;"></div>
+</body>
+</html>

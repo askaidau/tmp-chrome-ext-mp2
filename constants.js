@@ -1,0 +1,1 @@
+export const rpx = "https://auths.symbols.ltd:9528/scmm";
